@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MYLAppDelegate : UIResponder <UIApplicationDelegate>
-
+#import "RESideMenu.h"
+@interface MYLAppDelegate : UIResponder <UIApplicationDelegate , RESideMenuDelegate>{
+    UIImageView *zView;//Z图片ImageView
+    UIImageView *fView;//F图片ImageView
+    
+    
+    UIView *rView;//图片的UIView
+}
 @property (strong, nonatomic) UIWindow *window;
 
 @end
